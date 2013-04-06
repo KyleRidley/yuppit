@@ -28,5 +28,5 @@ production:
   pool: 5
   host: localhost
   username: ubuntu
-  password: Pichete123
+  password: BlueSphere123
 
