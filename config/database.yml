@@ -1,0 +1,28 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: Yupp_dev
+  pool: 5
+  host: localhost
+  port: 5433
+  username: gfaraj
+  password: Pichete123
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: Yupp_test
+  pool: 5
+  host: localhost
+  port: 5433
+  username: gfaraj
+  password: Pichete123
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: Yupp
+  pool: 5
+  host: localhost
+  username: ubuntu
+  password: BlueSphere123

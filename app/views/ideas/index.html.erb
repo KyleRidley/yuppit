@@ -1,0 +1,42 @@
+<div class="secondary-nav flush">
+  <ul>
+    <li><%= link_to('Recent', recent_ideas_path, :class => 'btn') %></li>
+    <li><%= link_to('Popular', popular_ideas_path, :class => 'btn') %></li>
+  </ul>
+</div>
+
+<div class="ideas flush">
+  <% if @ideas.count > 0 %>
+    <% @ideas.each do |idea| %>
+      <div class="idea flush">
+        <div class="rating">
+          <%= image_tag('bulb.jpg') %>
+        </div>
+        <div class="content">
+          <p class="title">
+            <%= link_to(idea.title, idea) %>
+          </p>
+          <div class="body">
+            <p class="body-short">
+              <%= idea.body.length > 200 ? idea.body[0..200] + '...' : idea.body %>
+            </p>
+            <p class="body-full" style="display:none;">
+              <%= idea.body %>
+            </p>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="left">
+            <%= link_to('12 comments', '#') %>
+            <%= link_to('share', '#') %>
+          </div>
+          <div class="right">
+          </div>
+        </div>
+      </div>
+    <% end %>
+  <% else %>
+    <p>There is nothing here</p>
+  <% end %> 
+</div>

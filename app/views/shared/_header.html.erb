@@ -1,0 +1,36 @@
+<div id="header">
+<div class="header-inner">
+  <% link_to(content_tag(:span, '', :class => 'logo'), root_path, :class => 'home-link') %>
+  <%= link_to('Yupp', root_path, :class => 'logo-txt') %><div class="logo-beta">beta</div>
+  <div id="secondary-nav">
+    <ul>
+      <% if signed_in? %>
+        <li>
+          <%= link_to('New Idea', new_idea_path, :class => 'link button-invite') %>
+        </li>
+        <li>
+          <%= link_to(image_tag(current_user.best_image_url, :class => 'user-image', :title => current_user.display_name), user_path(current_user)) %>
+        </li>
+      <% end %>
+        <li>
+        <% if signed_in? %>
+          <%= link_to('Sign Out', logout_path, :class => 'button-logout') %>
+        <% else %>
+          <%= link_to('Sign In', '#', :class => 'button button-login') %>
+        <% end %>
+        </li>
+    </ul>
+  </div>
+  <!--<div id="sv-primary-nav">
+    <= top_menu_items %>
+  </div>-->
+  <div id="search-nav">
+    <form method="get" action="/search">
+      <div class="form-item" style="display: block;">
+        <input type="text" placeholder="search" value="" name="q" id="search" class="text">
+        <button id="search-submit"></button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>

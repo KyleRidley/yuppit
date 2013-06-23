@@ -1,0 +1,82 @@
+.secondary-nav
+{
+  margin-bottom: 20px;
+}
+
+.secondary-nav ul
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.secondary-nav li
+{
+  float: left;
+  margin-right: 8px;
+}
+
+.ideas
+{
+}
+
+.ideas p
+{
+}
+
+.ideas .idea
+{
+  border: 1px solid #02389c;
+  padding: 5px 6px;
+  margin-bottom: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.ideas .idea:hover
+{
+  background-color: #fafafa;
+}
+
+.ideas .idea .rating
+{
+  float: left;
+  margin-right: 5px;
+  width: 39px;
+}
+
+.ideas .idea .rating img
+{
+  width: 39px;
+  height: 42px;
+}
+
+.ideas .idea .content
+{
+  margin-left: 50px;
+  margin-bottom: 5px;
+}
+
+.ideas .idea .content .title
+{
+  margin: 0;
+  margin-bottom: 3px;
+  font-size: 1.4em;
+}
+
+.ideas .idea .content .body
+{
+  margin: 0;
+}
+
+.idea-body
+{
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.1) 0 0 0 1px inset, rgba(0,0,0,0.03) 0 0 3px 0;
+  width: 800px;
+  padding: 20px 25px;
+  background-color: #fafafa;
+}
